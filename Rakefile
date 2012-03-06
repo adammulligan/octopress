@@ -146,7 +146,7 @@ task :new_page, :filename do |t, args|
       page.puts "footer: true"
       page.puts "---"
     end
-    exec "if [ -n $EDITOR ] ; then $EDITOR #{filename} ; fi"
+    exec "if [ -n $EDITOR ] ; then $EDITOR #{file} ; fi"
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
   end
